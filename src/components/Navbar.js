@@ -7,6 +7,7 @@ export default function Navbar(){
             <nav>
                 <ul>
                     <li><a href="">Un bar random</a></li>
+                    <li><a href="">Ajouter un lieu</a></li>
                 </ul>
                 <Profile id="1" username="Laznet"/>
             </nav>

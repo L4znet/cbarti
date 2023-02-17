@@ -1,5 +1,5 @@
 .button{
-  width:230px;
+  width:auto;
   background-color: $purple;
   height:60px;
   margin: 40px 0;
@@ -15,6 +15,7 @@
   font-weight: bold;
   i{
     font-size:30px;
+    margin-right: 30px;
   }
 
   &:hover{

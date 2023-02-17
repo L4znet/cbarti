@@ -5,18 +5,16 @@ import Filters from "./components/Filters";
 import Cards from "./components/Cards";
 import Searchbar from "./components/Searchbar";
 import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Random from "./pages/Random";
+import {Route, Routes} from "react-router-dom";
 
 
 export default function App() {
   return (
-    <section className="wrapper">
-        <header>
-            <a href="" class="logo"><img src={logo} alt="Le logo du site"/></a>
-            <Navbar/>
-        </header>
-        <Searchbar/>
-        <Filters/>
-        <Cards/>
-    </section>
+      <Routes>
+          <Route path="/" element={ <Home/> } />
+          <Route path="/random" element={ <Random/> } />
+      </Routes>
   )
 }

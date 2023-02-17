@@ -5,7 +5,7 @@ export default function Card() {
 
     return (
         <>
-            <article>
+            <article class="place">
                 <img src={thumbnail} alt=""/>
                 <div>
                     <h2>Lorem ipsum dolor sit amet</h2>
