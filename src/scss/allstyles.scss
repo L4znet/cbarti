@@ -1,0 +1,28 @@
+@import "../scss/variables";
+
+body{
+  background-color: $bg_color;
+  row-gap: 50px;
+  main{
+    display: grid;
+    .wrapper{
+      display: grid;
+      place-self: center;
+      width:60%;
+      header{
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        height:100%;
+        .logo{
+          display: grid;
+          width:100%;
+          place-self: center;
+        }
+        @import "components_styles/navbar";
+      }
+      @import "components_styles/searchbar";
+      @import "components_styles/filters";
+      @import "components_styles/cards";
+    }
+  }
+}
