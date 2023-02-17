@@ -1,6 +1,6 @@
 
 export default function Filter(props) {
     return (
-        <li>{props.name}</li>
+        <li style={{"backgroundColor": props.filterBgColor}}>{props.name}</li>
     )
 }
