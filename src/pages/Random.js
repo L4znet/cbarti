@@ -1,10 +1,10 @@
 import logo from '../images/logo.svg';
-import user from '../images/user.png';
 import '../App.css';
 import Navbar from "../components/Navbar";
 import Card from "../components/Card";
 import thumbnail from "../images/thumbnail.png";
 import Button from "../components/Button";
+import HeaderNav from "../components/HeaderNav";
 
 
 export default function Random() {
@@ -12,10 +12,7 @@ export default function Random() {
     const filters = ["Bar", "Cocktail"]
     return (
         <section className="wrapper">
-            <header>
-                <a href="src" class="logo"><img src={logo} alt="Le logo du site"/></a>
-                <Navbar/>
-            </header>
+            <HeaderNav/>
             <Card
                 title="sfdsfdsfd"
                 filters={filters}

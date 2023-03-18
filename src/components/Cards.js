@@ -4,6 +4,10 @@ import Button from "./Button";
 
 export default function Cards() {
     const filters = ["Bar", "Cocktail"]
+    const loadMore = () => {
+
+    }
+
     return (
         <>
             <section className="places">
@@ -29,7 +33,7 @@ export default function Cards() {
                     address="1 Rue d’Allemagne, 44000 Nantes"
                     picture={thumbnail}/>
             </section>
-            <Button text="Charger plus" icon="fa-sharp fa-solid fa-chevron-down"/>
+            <Button method={loadMore} text="Charger plus" icon="fa-sharp fa-solid fa-chevron-down"/>
         </>
     )
 }
