@@ -1,45 +1,10 @@
 .searchbar{
-  display: flex;
-  justify-content: space-between;
-  input{
-    width:93%;
-    background-color: #FFF;
-    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25);
-    border-radius: 16px;
-    height: 58px;
-    font-size:20px;
-    padding-left:20px;
-    &::placeholder{
-      color: #d9d9d9;
-    }
-    &:focus{
-      outline: 3px solid lighten($purple, 10 );
-    }
-  }
+  display: grid;
+  grid-template-columns: 1fr fit-content(0);
+  grid-template-rows: 58px;
+  column-gap: 40px;
 
-  button{
-    height: 63px;
-    min-width:63px;
-    padding:0;
-    margin:0;
-    border-radius: 16px;
-    background-color: $purple;
-    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25);
-    color:#FFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
-    &:hover{
-      background-color: lighten($purple, 5);
-    }
-
-    i{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-
+  @import "input";
+  @import "button";
 
 }

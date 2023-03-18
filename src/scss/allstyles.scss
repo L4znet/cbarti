@@ -1,5 +1,9 @@
 @import "../scss/variables";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body{
   background-color: $bg_color;
   row-gap: 50px;
